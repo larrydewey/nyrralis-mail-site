@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nyrralis Mail privacy policy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<nav><a href="./">Nyrralis Mail</a><a href="privacy.html">Privacy policy</a></nav>
+<h1>Privacy policy</h1>
+<p class="lede">Effective November 9, 2026.</p>
+
+<p>Nyrralis Mail is an email client that runs on your Android device. It has no server of its own, collects no analytics, shows no ads and does not send your data to its developer or to anyone else.</p>
+
+<h2>Data the app handles</h2>
+<ul>
+<li><strong>Your email</strong> (messages, attachments, folders and labels, contacts you have exchanged mail with) is downloaded from your mail provider so you can read, search and answer it.</li>
+<li><strong>Account credentials</strong>: OAuth access and refresh tokens for Google and Microsoft accounts, or the password or app password you enter for other servers.</li>
+<li><strong>Settings</strong> you choose in the app, and OpenPGP keys if you turn that feature on.</li>
+</ul>
+
+<h2>Where it is stored</h2>
+<p>All of this stays on your device, in an encrypted database whose key is protected by Android Keystore. It is excluded from Android backups. Uninstalling the app or removing an account deletes the data.</p>
+
+<h2>Who the app talks to</h2>
+<ul>
+<li>The mail servers of the accounts you add (for example Gmail's IMAP and SMTP servers, Microsoft Graph, or your own server).</li>
+<li>Google's or Microsoft's sign-in and token endpoints, only for accounts that use OAuth.</li>
+<li>When you add an account, the app looks up its server settings: it sends only the domain part of your address (for example <code>gmail.com</code>) to Mozilla's public configuration database (<code>autoconfig.thunderbird.net</code>), may send your full address to your own mail provider's setup addresses (<code>autoconfig.</code> and <code>autodiscover.</code> on your domain), and makes ordinary DNS lookups for your domain.</li>
+<li>Image servers named in an email, only after you choose to show that message's images.</li>
+</ul>
+<p>Nothing else. There is no telemetry, crash reporting service or advertising SDK.</p>
+
+<h2>Google user data</h2>
+<p>For Gmail accounts the app requests the <code>https://mail.google.com/</code> scope, which is the scope Google requires for IMAP and SMTP access, plus <code>openid</code> and <code>email</code> to learn which address signed in. The app uses this access only to show, search, organize and send your email inside the app at your request. It does not transfer Google user data to anyone, does not use it for advertising, and does not use it to train machine learning or AI models. Nyrralis Mail's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Your choices</h2>
+<ul>
+<li>Remove an account in the app to delete its local data and tokens.</li>
+<li>Revoke the app's access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> (Google) or <a href="https://account.live.com/consent/Manage">account.live.com/consent/Manage</a> (Microsoft).</li>
+</ul>
+
+<h2>Changes and contact</h2>
+<p>If this policy changes, the new version will be posted on this page with a new effective date. Questions: <a href="https://github.com/larrydewey/nyrralis-mail-site/issues">open an issue</a> on the site's repository.</p>
+
+<footer><a href="./">Nyrralis Mail</a></footer>
+</main>
+</body>
+</html>
